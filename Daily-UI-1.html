@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily UI Challenge | Day 1</title>
+    <style>
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .frame 
+        {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 700px;
+            height: 700px;
+            background-color: whitesmoke;
+            box-shadow: 10px 10px 13px 0 rgba(0,0,0,0.4);
+            margin-top: -300px;
+            margin-left: -300px;
+            overflow: hidden;
+        }
+
+        .center
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner
+        {
+            width: 100%;
+            height: 300px;
+            background-color: black;
+            box-sizing: border-box;
+        }
+        .banner img 
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 
+        {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            height: 80px;
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 900;
+            color: #000;
+        }
+
+        p
+        {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            height: 90px;
+            margin-top: 2px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #aaa;
+        }
+
+        label{
+            /* start with the box shadow mdn reference after a nap */
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="banner">
+                <img src="./Assets/OIP.jpg" alt="Workshop Image">
+            </div>
+            <h1>Let's Learn to Code! Free Coding Workshop Sign Up</h1>
+            <p>Take your first step into the exciting world of coding. This free Workshop will introduce you to the basic s of pragramming and get you started on your coding journey.</p>
+
+        <form action="">
+            <div class="field-1">
+                <label for="email">Email <input type="email" id="email" placeholder="Enter your email address"></label>
+            </div>
+            <div class="field-2">
+                <label for="phoneNumber">Phone Number <span class="grayed-out">Optional</span> <input type="number" id="phoneNumber" placeholder="Enter your phone number" required></label>
+            </div>
+            <div class="field-3">
+                <div class="dropDown-for-date">
+                    <select name="date" id="date">
+                        <option value="date">12-10-2024</option>
+                        <option value="date">15-10-2024</option>
+                        <option value="date">18-10-2024</option>
+                        <option value="date">20-10-2024</option>
+                    </select>
+                </div>
+                <div class="dropDown-for-time">
+                    <select name="time" id="time">
+                        <option value="time">12:00 AM</option>
+                        <option value="time">04:00 PM</option>
+                        <option value="time">10:00 PM</option>
+                        <option value="time">08:00 AM</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
